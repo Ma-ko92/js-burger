@@ -16,4 +16,13 @@ calculateButton.addEventListener("click", function() {
     var burgerPrice = 50;
     // Salvo in una variabile l'elemento checkbox presente nell'HTML.
     var addonCheckBoxes = document.getElementsByClassName("addon");
+    // Inizializzo il ciclo for per "leggere" se una checkbox è attiva o meno.
+    for(var i = 0; i < addonCheckBoxes.length; i++) {
+        var checkBoxOn = addonCheckBoxes[i];
+
+        if(checkBoxOn.checked == true) {
+            var addOnPrice = parseInt(checkBoxOn.value);
+            
+        }
+    }
 });
