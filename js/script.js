@@ -8,5 +8,12 @@ calculateButton.addEventListener("click", function() {
     // Salvo in una variabile il nome dell'hamburger inserito dall'utente.
     var burgerNameElement = document.getElementById("user_burger_name");
     var burgerName = burgerNameElement.value;
-    console.log(burgerName);
+    
+    // Creo un ciclo "for" che leggerà le classi delle checkbox, cosi da poterle manipolare
+    // in un unico comando.
+    // 
+    // Inizio impostando una variabile per il prezzo base dell'hamburger.
+    var burgerPrice = 50;
+    // Salvo in una variabile l'elemento checkbox presente nell'HTML.
+    var addonCheckBoxes = document.getElementsByClassName("addon");
 });
