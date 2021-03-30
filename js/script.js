@@ -4,5 +4,9 @@
 var calculateButton = document.getElementById("calculate");
 calculateButton.addEventListener("click", function() {
     // Imposto una serie di azioni che verranno avviate dopo il "click" del button.
-    
+
+    // Salvo in una variabile il nome dell'hamburger inserito dall'utente.
+    var burgerNameElement = document.getElementById("user_burger_name");
+    var burgerName = burgerNameElement.value;
+    console.log(burgerName)
 });
