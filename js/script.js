@@ -8,5 +8,5 @@ calculateButton.addEventListener("click", function() {
     // Salvo in una variabile il nome dell'hamburger inserito dall'utente.
     var burgerNameElement = document.getElementById("user_burger_name");
     var burgerName = burgerNameElement.value;
-    console.log(burgerName)
+    console.log(burgerName);
 });
