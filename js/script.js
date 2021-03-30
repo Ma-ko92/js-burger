@@ -19,9 +19,15 @@ calculateButton.addEventListener("click", function() {
     // Inizializzo il ciclo for per "leggere" se una checkbox è attiva o meno.
     for(var i = 0; i < addonCheckBoxes.length; i++) {
         var checkBoxOn = addonCheckBoxes[i];
-
+        // Imposto una conzione che verifica se la check box è selezionata, e trasformo
+        // il suo valore in un intero.
         if(checkBoxOn.checked == true) {
             var addOnPrice = parseInt(checkBoxOn.value);
+            // Calcolo il prezzo dell'hamburger con quello dell'aggiunta selezionata.
+            burgerPrice += addOnPrice;
+            // Imposto una variabile che mi dia il numero intero con due decimali.
+            var finalAddOnPrice = burgerPrice.toFixed(2);
+            console.log(finalAddOnPrice)
             
         }
     }
