@@ -7,6 +7,10 @@ calculateButton.addEventListener("click", function() {
     var burgerNameElement = document.getElementById("user_burger_name");
     var burgerName = burgerNameElement.value;
 
+    // Imposto una condizione che: se il campo con il nome dell'hamburger è vuoto farà
+    // apparari un messaggio Popup, altrimenti proseguirà con il resto delle azioni.
+    // 
+    // Salvo in una variabile l'Id dell'elemento presente nella pagina HTML.
     var hiddenElement = document.getElementById("alert_message");
 
     if(burgerName === "") {
@@ -14,10 +18,10 @@ calculateButton.addEventListener("click", function() {
         console.log(hiddenElement)
     } else {
         hiddenElement.className = "alert_msg_hidden";
-        // Imposto una serie di azioni che verranno avviate dopo il "click" del button.
 
-        
-        
+        // Imposto una serie di azioni che verranno avviate dopo il "click" del button
+        // e la verifica del nome dell'Hamburger.
+
         // Creo un ciclo "for" che leggerà le classi delle checkbox, cosi da poterle manipolare
         // in un unico comando.
         // 
@@ -43,6 +47,6 @@ calculateButton.addEventListener("click", function() {
         // Creo una lista di codici "coupon" tramite un array.
         // 
         // Salvo in una variabile la lista di array.
-        var couponList = [""]
+        var couponList = ["a34ft6ol99","bb783rg1l9","boolean","tt567gbn00","90rdf32kj5"]
     }
 });
