@@ -141,7 +141,7 @@ body{
 .coupon_msg{
     position: absolute;
     z-index: 1;
-    bottom: 190px;
+    bottom: 170px;
     left: 175px;
     width: 180px;
     color: black;
