@@ -8,13 +8,14 @@
 /* COMMON */
 body{
     font-family: Helvetica;
+    width: 100vw;
+    background-color: #fff4e2;
 }
 
 /* Wrapper */
 .wrapper{
-    background-color: #fff4e2;
-    display: flex;
-    flex-direction: row;
+    background-color: white;
+    width: 50%;
 }
 .container_left{
     background-color: white;
@@ -26,12 +27,30 @@ body{
     background-color: #fdbc41;
     padding: 50px 0px 30px 30px;
 }
+.heading h1{
+    font-weight: 800;
+}
 /* HEADER END */
 
 /* MAIN */
+
+/* Burger name area */
+.burger_name_area{
+    padding: 10px;
+}
 .burger_name{
     position: relative;
+    padding: 10px 0px;
+    font-size: 22px;
+    font-weight: 600;
+    border: none;
+    outline: none;
 }
+.burger_name:focus{
+    background-color: #fff4e2;
+}
+
+/* Error meaasage */
 .alert_msg_hidden{
     position: absolute;
     visibility: hidden;
@@ -39,9 +58,8 @@ body{
 .alert_msg{
     position: absolute;
     z-index: 1;
-    top: 100px;
-    left: 20px;
-    content: "ciao";
+    top: 120px;
+    left: 40px;
     width: 200px;
     color: black;
     background-color: rgb(253 188 65);
@@ -56,16 +74,124 @@ body{
     position: absolute;
     top: 100px;
     left: 25px;
+    margin-top: -62px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #fdbc41 transparent transparent transparent;
+    z-index: 1;
+}
+
+/* Inner container */
+.inner_container{
+    padding: 30px 0px 30px 30px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+}
+.inner_container h3{
+    padding: 10px;
+}
+.ingredients_add{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* Ingredients area */
+.ingredients_add li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    width: calc(100% / 2);
+}
+.ingredients_add li img{
+    width:40px;
+}
+.ingredients_add li label{
+    margin-left:20px;
+    margin-right: 5px;
+}
+
+/* Coupon Area */
+.coupon_area{
+    padding: 30px 10px;
+}
+.coupon_area label{
+    margin-right: 7px;
+}
+.coupon_inp{
+    position: relative;
+    border: 0;
+    outline: none;
+    background-color: #fff4e2;
+    padding: 7px 5px;
+    border-radius: 10px;
+    width: 60%;
+}
+.coupon_inp:focus{
+    background-color: #fdbc41;
+}
+/* Coupon message */
+.coupon_msg_hidden{
+    position: absolute;
+    visibility: hidden;
+}
+.coupon_msg{
+    position: absolute;
+    z-index: 1;
+    bottom: 190px;
+    left: 175px;
+    width: 180px;
+    color: black;
+    background-color: rgb(253 188 65);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.coupon_msg::after{
+    content: "";
+    position: absolute;
+    top: 85px;
+    left: 25px;
     margin-top: -61px;
     border-width: 10px;
     border-style: solid;
-    border-color: orange transparent transparent transparent;
+    border-color: #fdbc41  transparent transparent transparent;
     z-index: 1;
 }
-.inner_container{
-    padding: 30px 0px 30px 30px;
+
+/* Button */
+.btn{
+    text-align:center;
 }
-.ingredients_add li img{
-    width:50px;
+#calculate{
+    border-radius: 7px;
+    padding: 8px 22px;
+    border: 0;
+    background-color: #fdbc41;
+    font-weight: 800;
+    cursor: pointer;
+    outline: none;
+}
+#calculate:hover{
+    background-color: #f77d15;
+    
 }
 /* MAIN END */
+
+/* FOOTER */
+.footer_container{
+    height: 60px;
+    background-color: #d23359;
+    padding: 22px 10px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* FOOTER END*/

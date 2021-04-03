@@ -48,5 +48,34 @@ calculateButton.addEventListener("click", function() {
         // 
         // Salvo in una variabile la lista di array.
         var couponList = ["a34ft6ol99","bb783rg1l9","boolean","tt567gbn00","90rdf32kj5"]
+
+        // Salvo in una variabile il valore dell'input dei coupon.
+        var couponElement = document.getElementById("coupon");
+        var coupon = couponElement.value;
+        
+        // Creo delle condizioni che verifichino ogni singolo coupon della lista con quello  
+        // inserito dall'utente, se presente applico lo sconto dedicato.
+        var hiddenCouponElement = document.getElementById("coupon_message");
+
+        if(coupon === couponList[0]) {
+            hiddenCouponElement.className = "coupon_msg " + "coupon_msg:after"
+        } else if(coupon === couponList[1]) {
+            finalAddOnPrice = (finalAddOnPrice - (finalAddOnPrice * 5 / 100)).toFixed(2);
+            hiddenCouponElement.className = "coupon_msg_hidden";
+        } else if(coupon === couponList[2]) {
+            finalAddOnPrice = (finalAddOnPrice - (finalAddOnPrice * 75 / 100)).toFixed(2);
+            hiddenCouponElement.className = "coupon_msg_hidden";
+        } else if(coupon === couponList[3]) {
+            finalAddOnPrice = (finalAddOnPrice - (finalAddOnPrice * 10 / 100)).toFixed(2);
+            hiddenCouponElement.className = "coupon_msg_hidden";
+        } else if(coupon === couponList[4]) {
+            finalAddOnPrice = (finalAddOnPrice - (finalAddOnPrice * 15 / 100)).toFixed(2);
+            hiddenCouponElement.className = "coupon_msg_hidden";
+        } 
+        // Stampo sulla pagina html il prezzo finale.
+        document.getElementById("test").innerHTML = "$ " + burgerPrice;
+        document.getElementById("test").innerHTML = "$ " + finalAddOnPrice;
     }
+    
+
 });

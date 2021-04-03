@@ -13,91 +13,90 @@
 <body>
     <!-- WRAPPER -->
     <div class="wrapper">
-        <!-- Container Left -->
-        <div class="container_left">
-            <!-- HEADER -->
-            <div class="heading">
-                <h1>Create Your Burger</h1>
-            </div>
-            <!-- HEADER END-->
+        <!-- HEADER -->
+        <div class="heading">
+            <h1>Create Your Burger</h1>
+        </div>
+        <!-- HEADER END-->
 
-            <!-- MAIN -->
-            <main>
-                <!-- Main container -->
-                <div class="inner_container">
-                    <!-- Burger Name -->
+        <!-- MAIN -->
+        <main>
+            <!-- Main container -->
+            <div class="inner_container">
+                <!-- Burger Name -->
+                <div class="burger_name_area">
                     <label for="user_burger_name"></label>
-                    <input id="user_burger_name" class="burger_name" type="text">
+                    <input id="user_burger_name" class="burger_name" type="text" placeholder="Name Your Burger">
                     <span id="alert_message" class="alert_msg_hidden">Please insert a name for your Hamburger!</span>
-
-                    <!-- Heading -->
-                    <h3>Ingredients</h3>
-
-                     <!-- Ingredients -->
-                    <ul class="ingredients_add">
-                        <li>
-                            <img src="img/cheese.svg" alt="cheese">
-                            <label for="cheese">Cheese</label>
-                            <input id="cheese" class="addon" type="checkbox" value="1">
-                        </li>
-                        <li>
-                            <img src="img/tomato.svg" alt="tomato">
-                            <label for="tomato">Tomato</label>
-                            <input id="tomato" class="addon" type="checkbox" value="0.5">
-                        </li>
-                        <li>
-                            <img src="img/fried-egg.svg" alt="egg">
-                            <label for="egg">Egg</label>
-                            <input id="egg" class="addon" type="checkbox" value="2">
-                        </li>
-                        <li>
-                            <img src="img/lettuce.svg" alt="lettuce">
-                            <label for="lettuce">Lettuce</label>
-                            <input id="lettuce" class="addon" type="checkbox" value="0.5">
-                        </li>
-                        <li>
-                            <img src="img/mustard.svg" alt="mustard">
-                            <label for="mustard">Mustard</label>
-                            <input id="mustard" class="addon" type="checkbox" value="1.5">
-                        </li>
-                        <li>
-                            <img src="img/ketchup.svg" alt="ketchup">
-                            <label for="ketchup">Ketchup</label>
-                            <input id="ketchup" class="addon" type="checkbox" value="1.5">
-                        </li>
-                    </ul>
-                    <!-- Ingredients End -->
-
-                    <!-- Discount Coupon -->
-                    <label for="">Discount Coupon</label>
-                    <input id="coupon" type="text">
-
-                    <!-- Calculate Button -->
-                    <div class="btn">
-                        <button id="calculate">Calculate</button>
-                    </div>
-                    
                 </div>
-                <!-- Main container End -->
-            </main>
-            <!-- MAIN END-->
 
-            <!-- FOOTER -->
-            <footer>
-                <div class="footer_container">
-                    <span>Your Price</span>
-                    <span>Test</span>
+                <!-- Heading -->
+                <h3>Ingredients</h3>
+
+                <!-- Ingredients -->
+                <ul class="ingredients_add">
+                    <li>
+                        <img src="img/cheese.svg" alt="cheese">
+                        <label for="cheese">Cheese - 4$</label>
+                        <input id="cheese" class="addon" type="checkbox" value="4">
+                    </li>
+
+                    <li>
+                        <img src="img/tomato.svg" alt="tomato">
+                        <label for="tomato">Tomato - 1.5$</label>
+                        <input id="tomato" class="addon" type="checkbox" value="1.5">
+                    </li>
+
+                    <li>
+                        <img src="img/fried-egg.svg" alt="egg">
+                        <label for="egg">Egg - 5$</label>
+                        <input id="egg" class="addon" type="checkbox" value="5">
+                    </li>
+
+                    <li>
+                        <img src="img/lettuce.svg" alt="lettuce">
+                        <label for="lettuce">Lettuce - 1.5$</label>
+                        <input id="lettuce" class="addon" type="checkbox" value="1.5">
+                    </li>
+
+                    <li>
+                        <img src="img/mustard.svg" alt="mustard">
+                        <label for="mustard">Mustard - 2.5$</label>
+                        <input id="mustard" class="addon" type="checkbox" value="2.5">
+                    </li>
+
+                    <li>
+                        <img src="img/ketchup.svg" alt="ketchup">
+                        <label for="ketchup">Ketchup - 2.5$</label>
+                        <input id="ketchup" class="addon" type="checkbox" value="2.5">
+                    </li>
+                </ul>
+                <!-- Ingredients End -->
+
+                <!-- Discount Coupon -->
+                <div class="coupon_area">
+                    <label for="coupon">Discount Coupon</label>
+                    <input id="coupon" class="coupon_inp" type="text" placeholder="12345ABCDEF">
+                    <span id="coupon_message" class="coupon_msg_hidden" >Coupon scaduto!</span>
                 </div>
-            </footer>
-            <!-- FOOTER END -->
-        </div>
-        <!-- Container Left End-->
 
-        <!-- Container Right -->
-        <div class="container_right">
-            
-        </div>
-        <!-- Container Righ End-->
+                <!-- Calculate Button -->
+                <div class="btn">
+                    <button id="calculate">Calculate</button>
+                </div>
+            </div>
+            <!-- Main container End -->
+        </main>
+        <!-- MAIN END-->
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer_container">
+                <span>Your Price</span>
+                <span id="test">$ 50.00</span>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
     </div>
     <!-- WRAPPER END-->
 
